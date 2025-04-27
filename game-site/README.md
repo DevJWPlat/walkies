@@ -1,29 +1,18 @@
-# game-site
+# 🎮 Game Site
 
-This template should help get you started developing with Vue 3 in Vite.
+This project hosts multiple games, starting with Family Feud!
 
-## Recommended IDE Setup
+## 🚀 View the Project
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[Play Family Feud!](https://devjwplat.github.io/walkies/)
 
-## Customize configuration
+## 📂 Project Structure
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- `/game-site`: Family Feud project files
+- More games coming soon!
 
-## Project Setup
+## 🛠️ Built with
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+- Vue 3
+- Vite
+- GitHub Pages (for hosting)
