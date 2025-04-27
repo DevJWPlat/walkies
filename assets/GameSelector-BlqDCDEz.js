@@ -1,1 +1,0 @@
-import{c as t,a,b as r,w as o,u as s,R as l,o as u,d as n}from"./index-B-b2EqUJ.js";const i={__name:"GameSelector",setup(d){return(m,e)=>(u(),t("div",null,[e[1]||(e[1]=a("h1",null,"Select a Game",-1)),r(s(l),{to:"/familyfeud"},{default:o(()=>e[0]||(e[0]=[n("Start Family Feud!")])),_:1})]))}};export{i as default};
