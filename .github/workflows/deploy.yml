@@ -1,0 +1,40 @@
+# File: .github/workflows/deploy.yml
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or 'master' if that's your main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch submodules if any
+          fetch-depth: 0    # Important for full build history
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20  # Or 18, 20 is the latest stable
+
+      - name: Install dependencies
+        run: |
+          cd game-site
+          npm install
+
+      - name: Build the project
+        run: |
+          cd game-site
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: game-site/dist
